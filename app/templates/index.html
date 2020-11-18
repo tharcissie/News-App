@@ -4,45 +4,50 @@
 
 
 {% block content %}
+<div class="jumbotron" style="margin-top: -1cm; background-image: url('/app/static/image/a.jpg');">
+    <h1>Hello, world!</h1>
+    <p>...</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  </div>
 <div class="container">
-    <div class="inn">
-        <div id="General" class="row tab-pane">
+    <div >
+        <div>
             <h3>GENERAL NEWS</h3>
             <!--general news section-->
             {{macro.displayNewsList(general)}}
         </div>
-        <div id="Business" class="row tab-pane ">
+        <div">
             <h3>Business News</h3>
             <!-- Business news sources -->
             {{macro.displayNewsList(business)}}
         </div>
-        <div id="Entertainment" class="row tab-pane ">
+        <div>
             <h3>Entertainment News</h3>
             <!-- Entertainment news sources -->
             {{ macro.displayNewsList(entertainment) }}
         </div>
-        <div id="Sports" class="row tab-pane ">
+        <div">
             <h3>Sports News</h3>
             <!-- Sports news sources-->
             {{ macro.displayNewsList(sports) }}
         </div>
-        <div id="Science" class="row tab-pane">
+        <div>
             <h3>Science News</h3>
             <!--Science news sources-->
             {{macro.displayNewsList(science)}}
         </div>
-        <div id="Technology" class="row tab-pane">
+        <div>
             <h3>Technology News</h3>
             <!-- Technology news sources -->
             {{ macro.displayNewsList(technology) }}
         </div>
-        <div id="Health" class="row tab-pane ">
+        <di>
             <h3>Health News</h3>
             <!-- Health news sources -->
             {{ macro.displayNewsList(health) }}
         </div>
     </div>
-</div>
+
 
 
 {% endblock %}
