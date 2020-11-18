@@ -44,13 +44,12 @@ def process_sources(sources_list):
     for sources_item in sources_list:
         id = sources_item.get('id')
         name = sources_item.get('name')
-        description = sources_item.get('description')
         url = sources_item.get('url')
         category = sources_item.get('category')
 
 
         if id:
-            sources_object = News_Source(id,name,description,url,category)
+            sources_object = News_Source(id,name,url,category)
 
             sources_results.append(sources_object)
     return sources_results
