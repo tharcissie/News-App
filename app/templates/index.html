@@ -1,0 +1,48 @@
+{% extends 'base.html'%} 
+{% import 'macros.html' as macro%}
+
+
+
+{% block content %}
+<div class="container">
+    <div class="inn">
+        <div id="General" class="row tab-pane">
+            <h1>GENERAL NEWS</h1>
+            <!--general news section-->
+            {{macro.displayNewsList(general)}}
+        </div>
+        <div id="Business" class="row tab-pane ">
+            <h1>Business News</h1>
+            <!-- Business news sources -->
+            {{macro.displayNewsList(business)}}
+        </div>
+        <div id="Entertainment" class="row tab-pane ">
+            <h1>Entertainment News</h1>
+            <!-- Entertainment news sources -->
+            {{ macro.displayNewsList(entertainment) }}
+        </div>
+        <div id="Sports" class="row tab-pane ">
+            <h1>Sports News</h1>
+            <!-- Sports news sources-->
+            {{ macro.displayNewsList(sports) }}
+        </div>
+        <div id="Science" class="row tab-pane">
+            <h1>Science News</h1>
+            <!--Science news sources-->
+            {{macro.displayNewsList(science)}}
+        </div>
+        <div id="Technology" class="row tab-pane">
+            <h1>Technology News</h1>
+            <!-- Technology news sources -->
+            {{ macro.displayNewsList(technology) }}
+        </div>
+        <div id="Health" class="row tab-pane ">
+            <h1>Health News</h1>
+            <!-- Health news sources -->
+            {{ macro.displayNewsList(health) }}
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
