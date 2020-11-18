@@ -3,3 +3,9 @@ This is an app that contains a list of new source and help you to preview list f
 
 ## Author
 Tharcissie Idufashe
+
+## Technologies Used
+ * Python
+ * Flask
+ * Flask-script
+ * Flask-bootstrap
