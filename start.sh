@@ -1,4 +1,4 @@
-export NEWS_API_KEY=8937f5e3dde34cd19142a9c7944f53d0
+export NEWS_API_KEY=cf65d6997b794a289222b30e0fb61e56
 export SECRET_KEY= tharcissie
 
 python3.6 manage.py server
